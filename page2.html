@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Renewable Energy Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #2c7744;
+            --accent-color: #4CAF50;
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--gradient);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 20px;
+        }
+
+        .energy-type {
+            padding: 1.5rem;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .energy-type:hover {
+            transform: translateY(-10px);
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .benefits {
+            background: var(--gradient);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Renewable Energy Solutions</h1>
+        <p>Sustainable Energy for a Better Future</p>
+    </header>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#energy-types">Solutions</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="energy-types" data-aos="fade-up">
+            <div class="energy-type" data-aos="flip-left">
+                <h3><i class="fas fa-sun"></i> Solar Energy</h3>
+                <p>Harnessing the sun's power through photovoltaic panels and solar thermal collectors.</p>
+            </div>
+
+            <div class="energy-type" data-aos="flip-left" data-aos-delay="100">
+                <h3><i class="fas fa-wind"></i> Wind Energy</h3>
+                <p>Utilizing wind turbines to convert kinetic energy into electrical power.</p>
+            </div>
+
+            <div class="energy-type" data-aos="flip-left" data-aos-delay="200">
+                <h3><i class="fas fa-water"></i> Hydroelectric Power</h3>
+                <p>Converting the energy of flowing water into electricity.</p>
+            </div>
+
+            <div class="energy-type" data-aos="flip-left" data-aos-delay="300">
+                <h3><i class="fas fa-leaf"></i> Biomass Energy</h3>
+                <p>Using organic materials to produce heat and power.</p>
+            </div>
+        </section>
+
+
+        <section id="benefits" class="benefits" data-aos="fade-up">
+            <h2>Benefits of Renewable Energy</h2>
+            <ul>
+                <li>Reduced carbon emissions</li>
+                <li>Energy independence</li>
+                <li>Job creation</li>
+                <li>Lower long-term costs</li>
+                <li>Sustainable resource management</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
